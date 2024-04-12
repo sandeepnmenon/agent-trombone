@@ -7,6 +7,6 @@ The folder `PynkTromboneGymnasium` contains edits to run PynkTromboneGym environ
 
 The notebook `initial_env_check.ipynb` contains testing code to run the `PynkTromboneGymnasium` environment with stable_baselines3.
 
-Out code uses `python 3.10`.
+Our code uses `python 3.10`.
 
 To run, clone this repository and ensure `miniconda3` is installed, then run `conda env create -f conda_env.yml`.
