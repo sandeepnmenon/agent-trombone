@@ -3,4 +3,4 @@
 	url = https://github.com/Geson-anko/PynkTromboneGym.git
 [submodule "PynkTromboneGymnasium"]
 	path = PynkTromboneGymnasium
-	url = ./PynkTromboneGymnasium
+	url = https://github.com/chiral-carbon/PynkTromboneGymmansium
