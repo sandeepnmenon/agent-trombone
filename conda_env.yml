@@ -6,6 +6,6 @@ dependencies:
   - python=3.10
   - pip
   - pip:
-      - stable-baselines3==2.3.0
+      - stable-baselines3[extra]
       - git+https://github.com/adysonmaia/sb3-plus#egg=sb3-plus
       - -e submodules/PynkTromboneGymnasium/
