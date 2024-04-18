@@ -1,0 +1,6 @@
+[submodule "PynkTromboneGym"]
+	path = PynkTromboneGym
+	url = https://github.com/Geson-anko/PynkTromboneGym.git
+[submodule "PynkTromboneGymnasium"]
+	path = PynkTromboneGymnasium
+	url = https://github.com/chiral-carbon/PynkTromboneGymnasium.git
