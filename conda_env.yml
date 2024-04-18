@@ -4,6 +4,7 @@ channels:
   - defaults
 dependencies:
   - python=3.10
+  - pip
   - pip:
       - stable-baselines3==2.3.0
       - sb3-plus==0.1.3
