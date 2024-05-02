@@ -164,5 +164,5 @@ data/
 .vscode/
 *.zip
 logs/
-*.wav
+!docs/**/*.@(wav|mp3|ogg)
 *.code-workspace

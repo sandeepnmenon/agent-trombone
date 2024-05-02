@@ -56,3 +56,24 @@ $\text{CosineSimilarity}(\text{WhisperEmbed}(\text{generated\_sound}), \text{Whi
 # Known Limitations
 
 Since the tool itself is simplified version of the human vocal tract, it does not capture the full range of complexities that our vocal tracts undergo when producing speech or sound. Our trained agent’s best performance can hence only be as good as the best quality of speech that can be practically produced with the Pink Trombone. 
+
+# Results
+
+The letter A
+<audio controls>
+  <source src="{{ site.baseurl }}/audio/correct_letter_A.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+
+Model output after 100K iterations
+<audio controls>
+  <source src="{{ site.baseurl }}/audio/generated_from_mi_model_1.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+
+
+Model output after 1M iterations
+<audio controls>
+  <source src="{{ site.baseurl }}/audio/generated_from_mi_model_best.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
