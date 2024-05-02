@@ -30,7 +30,7 @@ For our defined motivations, an agent that can successfully model the behavior o
 
 ### Environment
 
-{% include _sections/env.md}
+{% include _sections/env.md %}
 
 ## Agent
 
