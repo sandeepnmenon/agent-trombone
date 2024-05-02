@@ -12,12 +12,12 @@ This project is driven by a fascination of how the human voice and the vocal sys
 ## Introduction
 
 ### Pink Trombone
-We use the tool [Pink Trombone](https://dood.al/pinktrombone/), which is s a tool developed by dood.al (Neil Thapen) and is a program based on a simplified model of the human voice tract.
+We use the tool [Pink Trombone](https://dood.al/pinktrombone/), which is a tool developed by dood.al (Neil Thapen) and is a program based on a simplified model of the human voice tract.
 ![pynk-trombone]({{ site.baseurl }}/images/pynk-trombone.png)
 The voice system consists of sound production (pitch, loudness, timbre from vocal chords) and sound articulation (vowels, consonants) which is controlled in the vocal tract. By using the lips, tongue, nose, etc., the produced sound takes shape. This tool provides us with a visual model and controls over nasal cavity, oral cavity, tongue movement, voicebox movement, pitch among others.
 
 ### Using Reinforcement Learning
-Our project aims to enable an RL agent to understand controls over the Pink Trombone, and to explore this environment in order to emulate accurate and normal speech. It will act as a guide for speech correction or language and pronunciation acquisition by learning from expert demonstrations of correct speech, and use this environment to learn and visualize tongue placement, pitch control, etc. 
+Our project aims to enable an RL agent to understand controls over the Pink Trombone environment, and to explore this environment in order to emulate accurate and normal speech. It will act as a guide for speech correction or language and pronunciation acquisition by learning from expert demonstrations of correct speech, and use this environment to learn and visualize tongue placement, pitch control, etc.
 
 For our defined motivations, an agent that can successfully model the behavior of the vocal tract will be able to:
 
@@ -30,13 +30,7 @@ For our defined motivations, an agent that can successfully model the behavior o
 
 ### Environment
 
-The environment is the Pink Trombone tool, which simulates the human vocal tract and allows for the modulation of various parameters to produce different sounds. These parameters include tongue position, lip tightness, vocal fold tension, and nasal passage openness. The state of the environment $S$ can be represented as a vector of these parameters at any given time, along with the resulting sound waveform.
-
-We used the [python API](https://github.com/Geson-anko/pynktrombone) for this tool to interact with it and created a [gymnasium environment](https://github.com/Farama-Foundation/Gymnasium) around it named [PynkTromboneGymnasium](https://github.com/chiral-carbon/PynkTromboneGymnasium).
-
-We defined the observation space as TODO:
-
-We defined the action space as TODO:
+{% include _sections/env.md}
 
 ## Agent
 
