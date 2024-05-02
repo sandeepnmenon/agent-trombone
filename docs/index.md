@@ -32,7 +32,7 @@ For our defined motivations, an agent that can successfully model the behavior o
 
 The environment is the Pink Trombone tool, which simulates the human vocal tract and allows for the modulation of various parameters to produce different sounds. These parameters include tongue position, lip tightness, vocal fold tension, and nasal passage openness. The state of the environment $S$ can be represented as a vector of these parameters at any given time, along with the resulting sound waveform.
 
-We used the (python API)[https://github.com/Geson-anko/pynktrombone] for this tool to interact with it and created a [gymnasium environment](https://github.com/Farama-Foundation/Gymnasium) around it named (PynkTromboneGymnasium)[https://github.com/chiral-carbon/PynkTromboneGymnasium].
+We used the [python API](https://github.com/Geson-anko/pynktrombone) for this tool to interact with it and created a [gymnasium environment](https://github.com/Farama-Foundation/Gymnasium) around it named [PynkTromboneGymnasium](https://github.com/chiral-carbon/PynkTromboneGymnasium).
 
 We defined the observation space as TODO:
 
