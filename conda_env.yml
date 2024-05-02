@@ -1,0 +1,14 @@
+name: rl_proj
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - ipykernel
+      - ipywidgets
+      - stable-baselines3[extra]
+      - gymnasium[box2d]
+      - git+https://github.com/adysonmaia/sb3-plus#egg=sb3-plus
+      - -e submodules/PynkTromboneGymnasium/
