@@ -1,5 +1,5 @@
 
-The letter A
+The results for the letter A
 <audio controls>
   <source src="{{ site.baseurl }}/audio/correct_letter_A.wav" type="audio/wav">
   Your browser does not support the audio element.
