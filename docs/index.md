@@ -5,14 +5,36 @@
 layout: default
 ---
 
-# Welcome to My Single-Page Blog
+# Learning Human Vocal Tract Movements using Reinforcement Learning
 
-This is the main content of your single-page blog. You can add your blog posts here using Markdown syntax.
+This project is driven by a fascination of how the human voice and the vocal system correlates to diverse speech systems and languages. By exploring how the functions of the vocal tract vary across languages and between individuals—with and without speech impediments—we aim to uncover the universal aspects of speech production. Training a reinforcement learning agent to mimic these complex vocal tract functions to produce recognizable speech offers an approach to understanding the correlation between vocal tract mechanics and various speech types.
 
-## Blog Post 1
+## Pynk Trombone
+We use the tool [Pink Trombone](https://dood.al/pinktrombone/), which is s a tool developed by dood.al (Neil Thapen) and is a program based on a simplified model of the human voice tract.
+![pynk-trombone]({{ site.baseurl }}/images/pynk-trombone.png)
+The voice system consists of sound production (pitch, loudness, timbre from vocal chords) and sound articulation (vowels, consonants) which is controlled in the vocal tract. By using the lips, tongue, nose, etc., the produced sound takes shape. This tool provides us with a visual model and controls over nasal cavity, oral cavity, tongue movement, voicebox movement, pitch among others.
 
-Content for blog post 1 goes here...
+Our project aims to enable an agent to understand controls over this tool that mimics the human vocal tract, and to explore this environment in order to emulate accurate and normal speech. It will act as a guide for speech correction or language and pronunciation acquisition by learning from expert demonstrations of correct speech, and use this environment to learn and visualize tongue placement, pitch control, etc. 
 
-## Blog Post 2
+For our defined motivations, an agent that can successfully model the behavior of the vocal tract will be able to:
 
-Content for blog post 2 goes here...
+1. Help to systematically (visual + audio cues) understand the behavior of the vocal tract’s parameters for any given language or speech system.
+2. Help people interested in learning new languages to understand the phonetic differences between different languages by maneuvering tongue placement, pitch control, etc. in the new language to assist their learning.
+3. Help as an aide for speech correction for people with speech impediments, stammering, or other factors that deter their normal speech.
+
+
+## Method Overview
+
+### Environment
+
+The environment is the Pink Trombone tool, which simulates the human vocal tract and allows for the modulation of various parameters to produce different sounds. These parameters include tongue position, lip tightness, vocal fold tension, and nasal passage openness. The state of the environment $S $ can be represented as a vector of these parameters at any given time, along with the resulting sound waveform.
+
+## Agent
+
+The agent interacts with the Pink Trombone environment by choosing actions $A$ that adjust the vocal tract parameters. The set of possible actions includes discrete changes in the position and tension of the model's components to produce various phonemes and sounds. The agent's goal is to learn a sequence of actions that result in the production of speech that closely matches a target speech sound or sequence.
+
+## Reward Function
+
+# Known Limitations
+
+Since the tool itself is simplified version of the human vocal tract, it does not capture the full range of complexities that our vocal tracts undergo when producing speech or sound. Our trained agent’s best performance can hence only be as good as the best quality of speech that can be practically produced with the Pink Trombone. 
