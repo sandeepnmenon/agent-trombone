@@ -13,6 +13,11 @@ This project is driven by a fascination of how the human voice and the vocal sys
 
 ### Pink Trombone
 We use the tool [Pink Trombone](https://dood.al/pinktrombone/), which is a tool developed by dood.al (Neil Thapen) and is a program based on a simplified model of the human voice tract.
+<div style="padding: 10px; background-color: #ffcc00; color: black; border-left: 6px solid #ffeb3b; margin-bottom: 20px;">
+  <strong>Warning!</strong> Be prepared for weird sounds when you click below. For the best experience, use headphones 🎧😊. 
+  <br/>
+  Click the "always voice" button in the environment to stop the sound.
+</div>
 <iframe src="https://dood.al/pinktrombone/" width="100%" height="500" frameborder="0"></iframe>
 The voice system consists of sound production (pitch, loudness, timbre from vocal chords) and sound articulation (vowels, consonants) which is controlled in the vocal tract. By using the lips, tongue, nose, etc., the produced sound takes shape. This tool provides us with a visual model and controls over nasal cavity, oral cavity, tongue movement, voicebox movement, pitch among others.
 
