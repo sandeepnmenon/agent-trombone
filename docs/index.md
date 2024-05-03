@@ -55,3 +55,8 @@ The method requires substantial computational resources, as there is no supervis
 {% include _sections/results.md %}
 
 {% include _sections/conclusion.md %}
+
+
+# References
+
+{% include _sections/references.md %}
