@@ -21,6 +21,7 @@ domain: my-site.github.io       # if you want to force HTTPS, specify the domain
 baseurl: "/agent-trombone/" # the subpath of your site, e.g. /blog
 url: https://my-site.github.io # the base hostname & protocol for your site, e.g. http://example.com
 # github_username:  sandeepnmenon
+repository: https://github.com/sandeepnmenon/agent-trombone
 
 # Build settings
 markdown: kramdown
