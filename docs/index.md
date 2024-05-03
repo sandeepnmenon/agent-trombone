@@ -37,14 +37,9 @@ For our defined motivations, an agent that can successfully model the behavior o
 The agent interacts with the Pink Trombone environment by choosing actions $A$ that adjust the vocal tract parameters. The set of possible actions includes discrete changes in the position and tension of the model's components to produce various phonemes and sounds. The agent's goal is to learn a sequence of actions that result in the production of speech that closely matches a target speech sound or sequence.
 
 ## Reward Function
-We experimented with two rewards
 
-1. MSE on LogMelSpectogram
-![mse](images/mse.png)
+{% include _sections/reward.md %}
 
-
-2. Cosine similarity on Whisper Embeddings
-![cosine](images/cosine.png)
 
 # Known Limitations
 
