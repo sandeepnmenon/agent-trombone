@@ -1,1 +1,3 @@
 # Conclusion
+The policy starts with doing random actions in the action space. After atleast 300K iterations, the agent learns a policy to produce a continuous sound to resemble the input sound.
+However, the environment is limited to produce sound in a limited range of pitch and other voice properties. The distribution of the sound properties of the dataset could be completely different from the distribution of sound that the environment can produce. We assume this is the reason that the agent is not able to learn a policy to mimick the exact voice properties of the input sound. 

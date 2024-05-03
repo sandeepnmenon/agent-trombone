@@ -27,7 +27,7 @@ Model output after 1M iterations
 
 In the early stages of training (around 0 to 200k steps), there are significant fluctuations. This is expected behavior as the agent is initially exploring the environment and trying to learn an optimal policy. 
 
-The graph also shows periods where the average episodic reward is negative, which suggests that the agent is receiving penalties from the environment during these episodes. However, after approximately 300k steps, the graph seems to stabilize and converge. This indicates that the agent has learned a policy that consistently achieves positive rewards in the environment, and its performance has reached a relatively stable state.
+The graph also shows periods where the average episodic reward is negative, which suggests that the agent is receiving penalties from the environment during these episodes. However, after approximately 300k steps, the graph seems to stagnate. This indicates that the agent has learned a policy that consistently achieves positive rewards in the environment, and its performance has reached a relatively stable state.
 
 ![explained_variance]({{ site.baseurl }}/images/explained_variance.png)
 
