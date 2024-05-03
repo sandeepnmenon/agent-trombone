@@ -166,3 +166,5 @@ data/
 logs/
 *.wav
 *.code-workspace
+docs/_site/*
+Gemfile.lock
