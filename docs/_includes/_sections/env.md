@@ -4,11 +4,11 @@ We used the [python API](https://github.com/Geson-anko/pynktrombone) for this to
 
 We defined the observation space as a `spaces.Dict` instance, and each dict element is defined as a `spaces.Box` that takes in values in the following ranges:
 
-        * TARGET_SOUND_WAVE: [-1, 1]
-        * GENERATED_SOUND_WAVE: [1, 1]
-        * TARGET_SOUND_SPECTROGRAM: [0, inf)
-        * GENERATED_SOUND_SPECTROGRAM: [0, inf)
-        * FREQUENCY: [0, self.sample_rate // 2]
+        * TARGET_SOUND_WAVE: [-1.0, 1.0]
+        * GENERATED_SOUND_WAVE: [-1.0, 1.0]
+        * TARGET_SOUND_SPECTROGRAM: [0.0, inf)
+        * GENERATED_SOUND_SPECTROGRAM: [0.0, inf)
+        * FREQUENCY: [0.0, self.sample_rate // 2]
         * PITCH_SHIFT: [-1.0, 1.0]
         * TENSENESS: [0.0, 1.0]
         * CURRENT_TRACT_DIAMETERS: [0.0, 5.0]
@@ -23,8 +23,8 @@ We defined the action space as a `spaces.Box`, which outputs 8 values representi
         * TRACHEA: (TRACHEA + 1) * 1.75
         * EPIGLOTTIS: (EPIGLOTTIS + 1) * 1.75
         * VELUM: (VELUM + 1) * 1.75
-        * TONGUE_INDEX: (TONGUE_INDEX+1) * 28+12
-        * TONGUE_DIAMETER: (TONGUE_DIAMETER+1) * 1.75
-        * LIPS: (LIPS+1) * 0.75
+        * TONGUE_INDEX: (TONGUE_INDEX + 1) * 28 + 12
+        * TONGUE_DIAMETER: (TONGUE_DIAMETER + 1) * 1.75
+        * LIPS: (LIPS + 1) * 0.75
 
 This is needed because the pink trombone API expects the values to be in this range.

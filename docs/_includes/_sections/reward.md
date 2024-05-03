@@ -1,3 +1,4 @@
+## Rewards
 We experimented with two rewards
 
 1. MSE on LogMelSpectogram

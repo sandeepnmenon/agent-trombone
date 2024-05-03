@@ -48,7 +48,9 @@ The agent interacts with the Pink Trombone environment by choosing actions $A$ t
 
 # Known Limitations
 
-Since the tool itself is simplified version of the human vocal tract, it does not capture the full range of complexities that our vocal tracts undergo when producing speech or sound. Our trained agent’s best performance can hence only be as good as the best quality of speech that can be practically produced with the Pink Trombone. 
+The approach relies heavily on the accuracy of the vocal tract simulation. Since the tool itself is simplified version of the human vocal tract, it does not capture the full range of complexities that our vocal tracts undergo when producing speech or sound. Our trained agent’s best performance can hence only be as good as the best quality of speech that can be practically produced with the Pink Trombone. 
+
+The method requires substantial computational resources, as there is no supervised data to do behavior cloning for the agent. Hence the agent needs to learn a policy in this very large action space to produce good imitations of the input sound.
 
 {% include _sections/results.md %}
 
