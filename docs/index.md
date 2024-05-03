@@ -40,14 +40,11 @@ The agent interacts with the Pink Trombone environment by choosing actions $A$ t
 We experimented with two rewards
 
 1. MSE on LogMelSpectogram
-$$
-\text{MSE}(\text{LogMelSpectrogram}(\text{generated\_sound}), \text{LogMelSpectrogram}(\text{target\_sound}))
-$$
+![mse](images/mse.png)
+
 
 2. Cosine similarity on Whisper Embeddings
-$\text{CosineSimilarity}(\text{WhisperEmbed}(\text{generated\_sound}), \text{WhisperEmbed}(\text{target\_sound}))$
-
-
+![cosine](images/cosine.png)
 
 # Known Limitations
 
